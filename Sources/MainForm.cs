@@ -17,6 +17,10 @@ namespace BookConverter
 		public MainForm()
 		{
 			InitializeComponent();
+
+			// Log into text view.
+			Logger.OnWrite += (level, message) => textLog.Invoke((MethodInvoker)delegate { textLog.AppendText(message); });
+			Logger.OnClear += () => textLog.Invoke((MethodInvoker)delegate { textLog.Clear(); });
 		}
 
 
