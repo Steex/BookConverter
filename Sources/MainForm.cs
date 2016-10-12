@@ -39,6 +39,7 @@ namespace BookConverter
 				{
 					string sourceFile = path;
 					string targetFile = Path.Combine(Path.GetDirectoryName(path), Path.GetFileNameWithoutExtension(path) + ".fb2");
+					Book book = new Book(path);
 				}
 			}
 		}

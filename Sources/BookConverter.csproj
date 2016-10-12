@@ -61,7 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookUtils.cs" />
+    <Compile Include="Book.cs" />
     <Compile Include="Droplet.cs">
       <SubType>UserControl</SubType>
     </Compile>
