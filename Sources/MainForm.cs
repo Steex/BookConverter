@@ -37,9 +37,11 @@ namespace BookConverter
 
 				foreach (string path in paths.Where(p => Path.GetExtension(p) == ".html" && File.Exists(p)))
 				{
+					Logger.Clear();
 					string sourceFile = path;
 					string targetFile = Path.Combine(Path.GetDirectoryName(path), Path.GetFileNameWithoutExtension(path) + ".fb2");
 					Book book = new Book(path);
+					book.PrintStructure();
 				}
 			}
 		}

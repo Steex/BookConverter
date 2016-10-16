@@ -3,4 +3,5 @@
 /Sources/obj
 /Sources/*.suo
 /.project
+/HtmlAgilityPack.*
 BookConverter.exe
